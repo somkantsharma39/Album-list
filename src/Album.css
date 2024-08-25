@@ -1,0 +1,150 @@
+/* Styling for root */
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #ffecb3;
+}
+
+/* Styling for title */
+.album-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Styling for buttons */
+.album-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+/* Styling for both button */
+.album-buttons button {
+  margin: 0 5px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover over album-button */
+.album-buttons button:hover {
+  background-color: #0056b3;
+}
+
+/* Add album */
+.add-album {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Add album input */
+.add-album input[type="text"] {
+  width: 70%;
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Add button */
+.add-album button {
+  padding: 8px 16px;
+  background-color: #5f0c12;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover over add-button */
+.add-album button:hover {
+  background-color: #218838;
+}
+
+/* Update album */
+.update-album {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Update button */
+.update-album button {
+  padding: 8px 16px;
+  background-color: #ffc107;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover over update-button */
+.update-album button:hover {
+  background-color: #e0a800;
+}
+
+/* Container */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Add, Update album section */
+.add-album,
+.update-album {
+  margin-bottom: 20px;
+}
+
+/* Album-list */
+.album-list {
+  display: flex;
+  flex-wrap: wrap; /* To wrap the items to the next line if they overflow */
+  gap: 20px; /* Space between items */
+}
+
+/* Main Div for Image, title */
+.mainDiv {
+  flex: 1 1 calc(25% - 20px); /* Adjusts the item size to 25% width with spacing accounted for */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+/* Album-title */
+.album-title {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+/* Album-button */
+.album-buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+/* Button */
+.album-buttons button {
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+/* Dummy image */
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+}
