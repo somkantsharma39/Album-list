@@ -1,4 +1,3 @@
-```markdown
 # Album List
 
 This is a simple ReactJS application that demonstrates CRUD operations (Create, Read, Update, Delete) on an album list using the JSONPlaceholder API.
