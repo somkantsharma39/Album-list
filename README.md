@@ -24,7 +24,7 @@ All API requests are made to: `https://jsonplaceholder.typicode.com/albums`
 2. Navigate to the project directory:
 
    ```bash
-   cd react-album-list
+   cd album-list
    ```
 
 3. Install the dependencies:
