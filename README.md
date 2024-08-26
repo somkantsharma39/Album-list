@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+```markdown
+# Album List
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple ReactJS application that demonstrates CRUD operations (Create, Read, Update, Delete) on an album list using the JSONPlaceholder API.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Fetch Albums**: Fetch and display a list of albums from the API.
+- **Add Album**: Add a new album by making a POST request to the API. The new album is saved in the React state. (Note: This is a dummy request; the album won't be saved on the server, but you'll receive a response with the data you sent).
+- **Update Album**: Update an existing album by making a PUT request to the API. The updated album data is reflected in the React state. (Note: This is a dummy request; the changes won't be saved on the server).
+- **Delete Album**: Delete an album by making a DELETE request to the API. The album is removed from the React state. (Note: This is a dummy request; the album won't actually be deleted from the server).
 
-### `npm start`
+## API Endpoint
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+All API requests are made to: `https://jsonplaceholder.typicode.com/albums`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   git clone https://github.com/your-username/react-album-list.git
+   ```
 
-### `npm run build`
+2. Navigate to the project directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   cd react-album-list
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Install the dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   npm install
+   ```
 
-### `npm run eject`
+4. Start the development server:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   npm start
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   The app should now be running on `http://localhost:3000`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## How It Works
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Fetch Albums**: On component mount, a GET request is made to the API to fetch the list of albums and store them in the state.
 
-## Learn More
+2. **Add Album**: A POST request is made to the API with the new album title. The response data is then added to the existing albums in the state.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Update Album**: A PUT request is made to the API with the updated album title. The album in the state is updated accordingly.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. **Delete Album**: A DELETE request is made to the API, and the corresponding album is removed from the state.
 
-### Code Splitting
+## Note
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project uses JSONPlaceholder, a free fake online REST API for testing and prototyping. The API requests in this app are dummy requests, meaning that while they follow the correct protocol and structure, the server does not persist the changes.
